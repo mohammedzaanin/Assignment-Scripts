@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Player : Character
 {
-    public Player(string Playername , int playerhealth){
-        Name = Playername;
-        Health = playerhealth;
+    public Player(string Playername , int playerhealth) : base(Playername, playerhealth)
+    {
+
     }   
     public void Heal(int amount){
         if(Health > 100){

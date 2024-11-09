@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Enemy : Character
 {
-    public Enemy(string enemyname , int enemyhealth){
-        Name = enemyname;
-        Health = enemyhealth;
+    public Enemy(string enemyname , int enemyhealth) : base(enemyname, enemyhealth)
+    {
+
     }
 
     public void Attack(Character defender ,int amount){

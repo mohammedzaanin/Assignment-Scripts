@@ -6,10 +6,6 @@ public class Character
 {
    private string name;
    private int health;
-   public Character(){
-    name = "";
-    health = 100;
-   }
    public Character(string charactername , int characterhealth){
     name = charactername;
     health = characterhealth;
