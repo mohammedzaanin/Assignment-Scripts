@@ -45,5 +45,14 @@ public class Character
         Debug.Log("Character Health: " + health);
         position.printPosition();
     }
+    public void Attack(int damage, Character target)
+    {
+        target.health -= damage;
+    }
+    public void Attack(int damage, Character target, string attackType)
+    {
+        target.health -= damage;
+        Debug.Log("The Attack Type is: "+ attackType);
+    }
 }
 }
