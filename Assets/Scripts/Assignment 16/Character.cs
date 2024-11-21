@@ -51,7 +51,7 @@ public class Character
     }
     public void Attack(int damage, Character target, string attackType)
     {
-        target.health -= damage;
+        Attack(damage,target);
         Debug.Log("The Attack Type is: "+ attackType);
     }
 }
